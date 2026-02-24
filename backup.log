@@ -1,0 +1,21 @@
+--- Backup Started at Mon Feb 23 19:34:18 UTC 2026 ---
+2026-02-23T19:34:18.316+0000	Failed: error creating intents to dump: error creating intents for database config: error getting collections for database `config`: (Unauthorized) not authorized on config to execute command { listCollections: 1, filter: {}, cursor: {}, lsid: { id: UUID("ac084ba0-f8b4-4463-8bde-18aae1ec576f") }, $db: "config" }
+Completed 23 Bytes/23 Bytes (350 Bytes/s) with 1 file(s) remainingupload: ../../tmp/mongodb-daily-dump-2026-02-23_19-34-18.gz to s3://mongodb-ec2-instance-s3bucket-backups/daily-backups/mongodb-daily-dump-2026-02-23_19-34-18.gz
+Success: mongodb-daily-dump-2026-02-23_19-34-18.gz uploaded to S3.
+--- Backup Finished at Mon Feb 23 19:34:19 UTC 2026 ---
+--- Backup Started at Mon Feb 23 19:36:24 UTC 2026 ---
+2026-02-23T19:36:24.566+0000	writing admin.system.users to archive '/tmp/mongodb-daily-dump-2026-02-23_19-36-24.gz'
+2026-02-23T19:36:24.568+0000	done dumping admin.system.users (1 document)
+2026-02-23T19:36:24.568+0000	writing admin.system.version to archive '/tmp/mongodb-daily-dump-2026-02-23_19-36-24.gz'
+2026-02-23T19:36:24.580+0000	done dumping admin.system.version (2 documents)
+Completed 896 Bytes/896 Bytes (13.3 KiB/s) with 1 file(s) remainingupload: ../../tmp/mongodb-daily-dump-2026-02-23_19-36-24.gz to s3://mongodb-ec2-instance-s3bucket-backups/daily-backups/mongodb-daily-dump-2026-02-23_19-36-24.gz
+Success: mongodb-daily-dump-2026-02-23_19-36-24.gz uploaded to S3.
+--- Backup Finished at Mon Feb 23 19:36:25 UTC 2026 ---
+--- Backup Started at Tue Feb 24 00:00:02 UTC 2026 ---
+2026-02-24T00:00:02.687+0000	writing admin.system.users to archive '/tmp/mongodb-daily-dump-2026-02-24_00-00-02.gz'
+2026-02-24T00:00:02.714+0000	done dumping admin.system.users (1 document)
+2026-02-24T00:00:02.714+0000	writing admin.system.version to archive '/tmp/mongodb-daily-dump-2026-02-24_00-00-02.gz'
+2026-02-24T00:00:02.789+0000	done dumping admin.system.version (2 documents)
+Completed 896 Bytes/896 Bytes (9.2 KiB/s) with 1 file(s) remainingupload: ../../tmp/mongodb-daily-dump-2026-02-24_00-00-02.gz to s3://mongodb-ec2-instance-s3bucket-backups/daily-backups/mongodb-daily-dump-2026-02-24_00-00-02.gz
+Success: mongodb-daily-dump-2026-02-24_00-00-02.gz uploaded to S3.
+--- Backup Finished at Tue Feb 24 00:00:03 UTC 2026 ---

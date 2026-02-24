@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wiz-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wiz-web
+  template:
+    metadata:
+      labels:
+        app: wiz-web
+    spec:
+      containers:
+      - name: python-web
+        image: 650251696449.dkr.ecr.us-east-1.amazonaws.com/wiz-repository:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: MONGO_URI
+          value: "10.20.1.51"
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: app-admin-access
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: default
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io

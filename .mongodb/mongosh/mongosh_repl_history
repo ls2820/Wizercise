@@ -1,0 +1,6 @@
+exit
+db.grantRolesToUser("myAdmin", ["root"])
+use admin
+exit
+nano ~/backup_script.sh
+exitadmin
